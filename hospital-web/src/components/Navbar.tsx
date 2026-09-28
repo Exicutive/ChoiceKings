@@ -27,7 +27,7 @@ export default function Navbar() {
         <div className="wrap flex items-center justify-between">
           <span className="inline-flex items-center gap-2 text-brand-100"><ShieldCheck className="h-4 w-4" aria-hidden />Personalised, patient-first healthcare</span>
           <div className="flex items-center gap-6">
-            <span className="text-brand-100/90">{siteConfig.hours[0].days}: {siteConfig.hours[0].time}</span>
+            <span className="text-brand-100/90">Monday to Sunday: Open 24 hours</span>
             <a href={telHref(siteConfig.emergencyPhone)} className="rounded-full bg-white/10 px-3 py-1 font-semibold transition hover:bg-white/20">Emergency: {siteConfig.emergencyPhone}</a>
           </div>
         </div>
