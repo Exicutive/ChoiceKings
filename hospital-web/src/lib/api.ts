@@ -1,4 +1,3 @@
-import process from "node:process";
 import { doctors, services } from "./data";
 import type { Appointment, AppointmentInput, ContactMessage, Doctor, Service } from "@/types";
 
