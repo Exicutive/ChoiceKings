@@ -1,3 +1,4 @@
+import process from "node:process";
 import { doctors, services } from "./data";
 import type { Appointment, AppointmentInput, ContactMessage, Doctor, Service } from "@/types";
 
@@ -12,8 +13,13 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
   return res.json();
 }
 
-export async function getDoctors(): Promise<Doctor[]> { return API ? request("/doctors/") : doctors; }
-export async function getServices(): Promise<Service[]> { return API ? request("/services/") : services; }
+export function getDoctors(): Promise<Doctor[]> { 
+  return API ? request("/doctors/") : Promise.resolve(doctors); 
+}
+export function getServices(): Promise<Service[]> { 
+  return API ? request("/services/") : Promise.resolve(services); 
+}
+
 export async function getService(slug: string) { return (await getServices()).find((s) => s.slug === slug); }
 
 export async function createAppointment(data: AppointmentInput): Promise<Appointment> {
