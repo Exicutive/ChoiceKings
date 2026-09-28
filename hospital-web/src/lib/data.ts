@@ -17,7 +17,10 @@ export const siteConfig = {
     { days: "Saturday", time: "Open 24 hours" },
     { days: "Sunday", time: "Open 24 hours" },
   ],
-  socials: [{ label: "Facebook", href: "#" }, { label: "Instagram", href: "#" }, { label: "X", href: "#" }],
+  socials: [
+    { label: "Facebook", href: "https://www.facebook.com/people/CHOICE-OF-KINGS-Specialist-Hospital/100076183514646/" },
+    { label: "Instagram", href: "https://www.instagram.com/choiceofkingshospital/" },
+  ],
 };
 
 export const navLinks = [

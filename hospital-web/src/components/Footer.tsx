@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { ArrowUpRight, Facebook, HeartPulse, Instagram, Mail, MapPin, Phone, Siren, Twitter } from "lucide-react";
+import { ArrowUpRight, Facebook, HeartPulse, Instagram, Mail, MapPin, Phone, Siren } from "lucide-react";
 import { getServices } from "@/lib/api";
 import { navLinks, siteConfig as s } from "@/lib/data";
 import { telHref } from "@/lib/utils";
 
-const socialIcons = { Facebook, Instagram, X: Twitter };
+const socialIcons = { Facebook, Instagram };
 const heading = "mb-5 font-serif text-lg text-white";
 const link = "group inline-flex items-center gap-1.5 text-brand-100/75 transition-colors hover:text-white";
 
