@@ -32,7 +32,7 @@ export default function Hero() {
           <p className="relative text-sm font-semibold uppercase tracking-[0.18em] text-brand-100">Always here for you</p>
           <h2 className="relative mt-2 font-serif text-3xl text-white">Visit us</h2>
           <ul className="relative mt-5 space-y-2">
-            {s.hours.slice(0, 2).map((h) => (
+            {s.hours.map((h) => (
               <li key={h.days} className="flex justify-between gap-4 border-b border-white/15 pb-3"><span>{h.days}</span><span className="font-semibold">{h.time}</span></li>
             ))}
           </ul>
