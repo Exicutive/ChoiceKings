@@ -13,9 +13,9 @@ export const siteConfig = {
   email: "enquiry@choiceofkingsspecialist.com",
   whatsapp: "2348034277691",
   hours: [
-    { days: "Monday to Friday", time: "8:00 AM to 6:00 PM" },
-    { days: "Saturday", time: "9:00 AM to 3:00 PM" },
-    { days: "Emergency", time: "Open 24 hours" },
+    { days: "Monday to Friday", time: "Open 24 hours" },
+    { days: "Saturday", time: "Open 24 hours" },
+    { days: "Sunday", time: "Open 24 hours" },
   ],
   socials: [{ label: "Facebook", href: "#" }, { label: "Instagram", href: "#" }, { label: "X", href: "#" }],
 };
