@@ -1,6 +1,6 @@
 import { CalendarCheck, Siren } from "lucide-react";
 import Button from "@/components/Button";
-import ContactInfo, { MapPlaceholder } from "@/components/ContactInfo";
+import ContactInfo, { HospitalMap } from "@/components/ContactInfo";
 import CTASection from "@/components/CTASection";
 import DoctorCard from "@/components/DoctorCard";
 import Hero from "@/components/Hero";
@@ -79,7 +79,7 @@ export default async function HomePage() {
       <section className="section bg-brand-50" id="contact">
         <div className="wrap grid gap-10 lg:grid-cols-2">
           <div><SectionHeader title="Find us" description="Visit, call or send us a message." /><ContactInfo /></div>
-          <MapPlaceholder />
+          <HospitalMap />
         </div>
       </section>
     </>
